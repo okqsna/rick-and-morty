@@ -1,0 +1,44 @@
+.Characters{
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    align-items:flex-start ;
+    margin-top: 30px;
+}
+.card__Characters{
+    width: 200px;
+    height: 280px;
+    background-color: #fff;
+    margin-top: 10px;
+    padding: 20px;
+    border: 2px solid darkseagreen;
+    border-radius: 10px;
+    cursor: pointer;
+}
+.txt__card__Characters{
+    margin-top: 6px;
+    display: flex;
+    flex-direction: column;
+}
+.characterName{
+    font-family: "Ubuntu";
+    font-weight: 700;
+    margin-bottom: 2px;
+    color: #000;
+}
+.characterSpecies, .characterStatus{
+    display: flex;
+    flex-direction: row;
+    font-size: 15px;
+    font-family: "Ubuntu";
+    color: #000;
+    font-weight: 500;
+}
+.characterSpecies span, .characterStatus span{
+    margin-right: 4px;
+    font-weight: 400;
+    color: #000;
+    font-family: "Ubuntu";
+    font-size: 15px;
+}

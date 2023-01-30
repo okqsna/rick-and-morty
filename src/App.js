@@ -1,23 +1,32 @@
-import logo from './logo.svg';
 import './App.css';
+import React, {useState, useEffect} from 'react';
+import Characters from './Characters/Characters';
+import PaginationChar from './PaginationChar/PaginationChar';
+const App=()=> {
+  const [page, setPage]=useState(1);
+  const [receivedData, setReceivedData]=useState([]);
+  const [loading, setLoading]=useState(true);
+  const {info, results}=receivedData;
+  useEffect(()=>{
+  fetch(`https://rickandmortyapi.com/api/character/?page=${page}`)
+  .then(response=>response.json())
+  .then(data=>{
+    setReceivedData(data);
+    setLoading(false);
+    console.log(data);
+  })
+  }, [])
 
-function App() {
   return (
     <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+      <h3>Characters</h3>
+    { loading ? <div className="loading__App"><p>Loading..</p></div>
+    :
+    <div className="content__App">
+      <Characters results={results} />
+      <PaginationChar />
+    </div>
+    }
     </div>
   );
 }
