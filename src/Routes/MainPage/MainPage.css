@@ -1,8 +1,0 @@
-.MainPage{
-    width:100%;
-    height: 100vh;
-    background-image: url('./rickandmort.webp');
-    background-size: cover;
-    background-repeat: no-repeat;
-    box-shadow: inset  0px 4px 4px 500px rgba(7, 60, 58, 0.81);
-}

@@ -1,9 +1,0 @@
-.Filters{
-    height: 10vh;
-    background-color: #073C3A;
-    display: flex;
-    flex-direction: row;
-    flex-wrap: wrap;
-    align-items: center;
-    padding: 0 30px;
-}
