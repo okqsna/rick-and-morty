@@ -1,0 +1,75 @@
+.Locations{
+    width: 100%;
+    height: fit-content;
+min-height: 100vh;
+    background-color: #073C3A;
+}
+.content__Locations{
+    display: flex;
+    flex-direction: column;
+    padding: 15px 50px;
+}
+.content__Locations h3{
+     font-family: 'Secular One';
+     font-style: normal;
+     font-weight: 400;
+     font-size: 40px;
+     letter-spacing: 0.01em;
+     color: #A2CF50;
+     margin-bottom: 20px;
+}
+.cards__content{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: space-around;
+}
+.card__Locations{
+    margin-top: 20px;
+    width:240px;
+    height: 180px;
+    display: flex;
+    background-color: #334E4D;
+    border-radius: 10px;
+    padding: 20px 20px;
+    cursor: pointer;
+}
+.txt__card__Locations{
+    display:flex;
+    flex-direction: column;
+}
+.nameLocation{
+    font-size: 17px;
+    font-family:"Poppins";
+    font-weight: 600;
+    color: #00B5CE;
+    font-size: 18px;
+    margin-bottom: 5px;
+    cursor: pointer;
+    transition: 0.1s;
+}
+.nameLocation:hover{
+    transition: 0.2s;
+    color:#A2CF50;
+}
+.typeLocation span,.dimensionLocation span{
+    font-family: 'Poppins';
+    font-weight: 400;
+    color: #e3e3e3;
+    margin-right: 4px;
+    font-size: 13px;
+}
+.typeLocation, .dimensionLocation{
+    font-family: 'Poppins';
+    font-weight: 400;
+    color:#fff;
+    font-size: 13px;
+}
+.pagination__Content{
+    width:100%;
+    height: 20vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
