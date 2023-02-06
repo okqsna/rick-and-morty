@@ -1,6 +1,6 @@
 # Rick and Morty
 
-> Website-wikipedia created with React.Js
+> Website-wikipedia created with React.JS
 
 ### Used Technologies
 - `HTML`
