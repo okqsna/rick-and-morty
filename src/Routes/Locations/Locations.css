@@ -1,7 +1,7 @@
 .Locations{
     width: 100%;
     height: fit-content;
-min-height: 100vh;
+    min-height: 100vh;
     background-color: #073C3A;
 }
 .content__Locations{
@@ -72,4 +72,25 @@ min-height: 100vh;
     display: flex;
     align-items: center;
     justify-content: center;
+}.err__Loc{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    width: 100%;
+    height: 40vh;
+}
+.err__Loc h3{
+    font-size: 50px;
+    color: red;
+    font-family: "Poppins";
+    font-weight:600 ;
+}
+.err__Loc p{
+    color: #e3e3e3;
+    margin-top: 10px;
+    font-weight: 400;
+    font-size: 18px;
+    font-family: "Poppins";
+    text-align: center;
 }
