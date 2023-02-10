@@ -1,0 +1,22 @@
+.FilterEpisodes{
+    height: 10vh;
+    margin-top: 10px;
+    display: flex;
+    align-items: flex-start;
+}
+.search__Epi input{
+    width: 290px;
+    padding: 10px 10px;
+    border: none;
+    border-radius: 5px;
+    background-color: #00B5CE;
+    outline: none;
+    color: #fff;
+    font-family: 'Poppins';
+    font-size: 15px;
+}
+::placeholder{
+    color: #fff;
+    font-family: 'Poppins';
+    font-size: 15px;
+}
